@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/good_morning_img"
+    android:orientation="vertical"
+    tools:context=".activities.Changepasword">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        app:cardBackgroundColor="@color/backColor"
+        app:cardCornerRadius="25dp">
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/arrow"
+            tools:ignore="ContentDescription" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        app:cardCornerRadius="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/apercu_bold"
+            android:text="@string/change_password"
+            android:textColor="@color/colorGradient"
+            android:textSize="24sp"
+
+            />
+
+        <EditText
+            android:id="@+id/oldPasw"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="70dp"
+            android:autofillHints="old password"
+            android:background="@drawable/edittextround"
+            android:fontFamily="@font/apercu_light"
+            android:hint="@string/old_password"
+            android:inputType="textEmailAddress"
+            android:paddingStart="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/newPasw"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="160dp"
+            android:autofillHints="new password"
+            android:background="@drawable/edittextround"
+            android:fontFamily="@font/apercu_light"
+            android:hint="@string/new_password"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/confirmPasw"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="240dp"
+            android:autofillHints="confirm new password"
+            android:background="@drawable/edittextround"
+            android:fontFamily="@font/apercu_light"
+            android:hint="@string/confirm_new_password"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"
+            tools:ignore="RtlSymmetry" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="320dp"
+            app:cardCornerRadius="10dp">
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_design"
+                android:fontFamily="@font/apercu_regular"
+                android:text="@string/save"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+</androidx.appcompat.widget.LinearLayoutCompat>

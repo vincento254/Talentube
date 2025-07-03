@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:padding="10dp"
+    tools:context=".activities.add_video_Activity">
+
+    <!--    Video Title-->
+    <EditText
+        android:id="@+id/new_video_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:hint="@string/enter_title"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        tools:ignore="Autofill,TextFields,TextContrastCheck,VisualLintTextFieldSize" />
+
+    <!--    Video Description-->
+    <EditText
+        android:id="@+id/new_video_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_video_title"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:hint="@string/enter_descrition"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        tools:ignore="Autofill,TextFields,TextContrastCheck,VisualLintTextFieldSize" />
+
+    <!--    Video Section-->
+    <VideoView
+        android:id="@+id/new_video_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/new_video_desc"
+        android:layout_marginTop="15dp"/>
+
+    <!--   Upload new Video Button -->
+    <Button
+        android:id="@+id/btn_upload_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_video_view"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:text="@string/upload_video"
+        android:padding="5dp"
+        tools:ignore="VisualLintButtonSize" />
+
+    <!--    FAB Pick Video-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_pick_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/ic_pick_video"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+
+
+</RelativeLayout>
